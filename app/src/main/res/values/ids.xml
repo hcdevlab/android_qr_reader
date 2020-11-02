@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<!-- 'MainUI' -->
+	<item name="toolbar" type="id"/>
+	<item name="constraintLayoutMainUI" type="id"/>
+	<item name="toolbarLayoutMainUI" type="id"/>
+	<item name="toolbarMainUI" type="id"/>
+	<item name="itemMainUIExit" type="id"/>
+
+	<!-- 'LoggedUI' -->
+	<item name="constraintLayoutLoggedUI" type="id"/>
+	<item name="toolbarLayoutLoggedUI" type="id"/>
+	<item name="toolbarLoggedUI" type="id"/>
+	<item name="itemFirstLoggedUI" type="id"/>
+	<item name="itemSecondLoggedUI" type="id"/>
+	<item name="itemThirdLoggedUI" type="id"/>
+	<item name="frameLayoutContainer" type="id"/>
+
+	<!-- 'FragmentQR' -->
+	<item name="fragmentQRContainer" type="id"/>
+	<item name="buttonSaveData" type="id"/>
+	<item name="buttonSendData" type="id"/>
+	<item name="textViewLabel" type="id"/>
+	<item name="textViewCounter" type="id"/>
+	<!-- <item name="toolbarLayoutFragmentQR" type="id"/>
+	<item name="toolbarFragmentQr" type="id"/> -->
+
+	<!-- 'FragmentHaul' -->
+	<item name="frameLayoutViewPager" type="id"/>
+	<item name="imageViewLeftNav" type="id"/>
+	<item name="imageViewRightNav" type="id"/>
+
+	<!-- 'FragmentHaul' -->
+	<item name="fragmentShiftNightTextView" type="id"/>
+	<item name="buttonCreateTable" type="id"/>
+
+	<!-- 'FragmentShiftMorning' -->
+	<item name="fragmentShiftMorningTextView" type="id"/>
+
+	<!-- 'RecycleViewAdapter' -->
+	<item name="recyclerItemNumber" type="id"/>
+	<item name="recyclerItemName" type="id"/>
+	<item name="recyclerItemState" type="id"/>
+
+</resources>
