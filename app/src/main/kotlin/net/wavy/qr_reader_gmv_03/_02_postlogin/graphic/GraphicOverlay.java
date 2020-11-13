@@ -21,24 +21,19 @@ import net.wavy.qr_reader_gmv_03.R;
 
 public class GraphicOverlay extends ViewGroup
 {
-	// -------------------------------------------------------------------------------------------------------------- //
 	private final Object mLock = new Object();
 	private int mPreviewWidth;
 	private float mWidthScaleFactor = 1.0f;
 	private int mPreviewHeight;
 	private float mHeightScaleFactor = 1.0f;
 	private int mFacing = CameraSource.CAMERA_FACING_BACK;
-	// -------------------------------------------------------------------------------------------------------------- //
 
-	// -------------------------------------------------------------------------------------------------------------- //
 	private float left, top, endY;
 	private int rectWidth, rectHeight;
 	private int frames;
 	private boolean invertAnimation;
 	private int lineColor, lineWidth;
-	// -------------------------------------------------------------------------------------------------------------- //
 
-	// -------------------------------------------------------------------------------------------------------------- //
 	public GraphicOverlay(Context context)
 	{
 		super(context);
@@ -62,9 +57,7 @@ public class GraphicOverlay extends ViewGroup
 		lineWidth = a.getInteger(R.styleable.graphic_overlay_line_width, getResources().getInteger(R.integer.line_width));
 		frames = a.getInteger(R.styleable.graphic_overlay_line_speed, getResources().getInteger(R.integer.line_speed));
 	}
-	// -------------------------------------------------------------------------------------------------------------- //
 
-	// -------------------------------------------------------------------------------------------------------------- //
 	public float getWidthScaleFactor()
 	{
 		return mWidthScaleFactor;
@@ -85,17 +78,13 @@ public class GraphicOverlay extends ViewGroup
 		}
 		postInvalidate();
 	}
-	// -------------------------------------------------------------------------------------------------------------- //
 
-	// -------------------------------------------------------------------------------------------------------------- //
 	public int dpToPx(int dp)
 	{
 		DisplayMetrics displayMetrics = getResources().getDisplayMetrics();
 		return Math.round(dp * (displayMetrics.xdpi / DisplayMetrics.DENSITY_DEFAULT));
 	}
-	// -------------------------------------------------------------------------------------------------------------- //
 
-	// -------------------------------------------------------------------------------------------------------------- //
 	@Override
 	protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec)
 	{
@@ -172,5 +161,4 @@ public class GraphicOverlay extends ViewGroup
 		canvas.drawLine(left, endY, left + dpToPx(rectWidth), endY, line);
 		invalidate();
 	}
-	// -------------------------------------------------------------------------------------------------------------- //
 }
