@@ -41,13 +41,10 @@ class MainUI : AnkoComponent<MainActivity>
 	override fun createView(ui: AnkoContext<MainActivity>): View = with(ui)
 	{
 		constraintLayout {
-			//--------------------------------------------------------------------------------//
-			// Experimentando con 'ConstraintLayout'.
 			id = R.id.constraintLayoutMainUI
 			fitsSystemWindows = true
 
 			lparams(width = matchParent, height = matchParent)
-			//--------------------------------------------------------------------------------//
 
 			frameLayout {
 				id = R.id.toolbarLayoutMainUI
@@ -166,7 +163,6 @@ class MainUI : AnkoComponent<MainActivity>
 		}
 	}
 
-	//------------------------------------------------------------------------------------------------------------------------//
 	// 1 de 3
 	fun sendDataAndReceiveResponse(context: Context, userEditText: EditText, passwordEditText: EditText): Unit
 	{
@@ -337,12 +333,6 @@ class MainUI : AnkoComponent<MainActivity>
 						for (authorizationCookie: String in cookiesHeader)
 						{*/
 							//--------------------------------------------------------------------------------//
-							/*
-								Ahora el servidor (el ejercicio es 'Vertx_Kotlin_DSL_01') me está mandando
-								dos 'cookies', una con 'JWT', la otra con 'CSRF'.
-								Y lo que se está guardando es la 'CSRF', por lo tanto el servidor recibe la
-								'CSRF' en lugar de la 'JWT'.
-							*/
 							// COOKIE_MANAGER.getCookieStore().add(null, HttpCookie.parse(authorizationCookie).get(0));
 							/*val cookieReceived: HttpCookie = HttpCookie.parse(authorizationCookie).get(0);
 							displayLog("Cookie name: " + cookieReceived.name) // El 'name' es 'Authorization'.
@@ -373,12 +363,7 @@ class MainUI : AnkoComponent<MainActivity>
 		}
 		return response
 	}
-	//------------------------------------------------------------------------------------------------------------------------//
 
-	//------------------------------------------------------------------------------------------------------------------------//
-	//------------------------------------------------------------------------------------------------------------------------//
-
-	//------------------------------------------------------------------------------------------------------------------------//
 	// COMPROBAR QUE EL GPS ESTÉ ACTIVO
 	// 1 de 3
 	private fun checkLocationEnabled(context: Context): Boolean
@@ -444,5 +429,4 @@ class MainUI : AnkoComponent<MainActivity>
 			Log.v("TAG", message.substring(start, end))
 		}
 	}
-	//------------------------------------------------------------------------------------------------------------------------//
 }
