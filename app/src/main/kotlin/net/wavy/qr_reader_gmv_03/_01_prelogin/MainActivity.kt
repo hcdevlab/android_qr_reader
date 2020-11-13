@@ -14,7 +14,6 @@ class MainActivity : AppCompatActivity()
 		MainUI().setContentView(this)
 	}
 
-	//----------------------------------------------------------------------------------------------------//
 	override fun onStop()
 	{
 		super.onStop()
@@ -25,5 +24,4 @@ class MainActivity : AppCompatActivity()
 		super.onDestroy()
 		// android.os.Process.killProcess(android.os.Process.myPid());
 	}
-	//----------------------------------------------------------------------------------------------------//
 }
