@@ -409,9 +409,7 @@ class MainUI : AnkoComponent<MainActivity>
 		dialog.setCanceledOnTouchOutside(false)
 		return dialog.show()
 	}
-	//------------------------------------------------------------------------------------------------------------------------//
 
-	//------------------------------------------------------------------------------------------------------------------------//
 	fun finishApp()
 	{
 		android.os.Process.killProcess(android.os.Process.myPid())
