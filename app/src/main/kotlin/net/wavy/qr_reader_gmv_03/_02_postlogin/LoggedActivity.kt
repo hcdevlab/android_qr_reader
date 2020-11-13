@@ -43,7 +43,6 @@ class LoggedActivity : AppCompatActivity()
 		// android.os.Process.killProcess(android.os.Process.myPid());
 		super.onDestroy()
 	}
-	//----------------------------------------------------------------------------------------------------//
 
 	override fun onBackPressed()
 	{
